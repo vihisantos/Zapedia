@@ -1,73 +1,55 @@
-# React + TypeScript + Vite
+# Zapedia 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> **Sua Superpotência de Vendas no WhatsApp.**
 
-Currently, two official plugins are available:
+Zapedia é uma plataforma premium de automação e gestão de atendimento projetada para transformar conversas em resultados reais. Centralize sua equipe, automatize fluxos repetitivos e escale sua operação com inteligência.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![Static Badge](https://img.shields.io/badge/Status-Live-green?style=for-the-badge)
+![Static Badge](https://img.shields.io/badge/Tech-React_%2B_Vite-61DAFB?style=for-the-badge&logo=react)
+![Static Badge](https://img.shields.io/badge/Styling-Tailwind_v4-38B2AC?style=for-the-badge&logo=tailwind-css)
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Destaques do Projeto
 
-## Expanding the ESLint configuration
+-   **🎯 Centralização Total:** Gerencie múltiplos atendentes em um único número.
+-   **🤖 Automação No-Code:** Crie fluxos de conversação inteligentes sem escrever uma linha de código.
+-   **📊 Dashboard de Insights:** Acompanhe métricas de performance e conversão em tempo real.
+-   **🎨 Design Premium:** Interface moderna, responsiva e com foco total na experiência do usuário (UX).
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠️ Tecnologias Utilizadas
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+-   **Frontend:** React 19 + Vite 7
+-   **Estilização:** Tailwind CSS v4 + Framer Motion (animações de alta fidelidade)
+-   **Ícones:** Lucide React
+-   **Tipografia:** Inter (Google Fonts)
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🚀 Como Executar Localmente
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Se você deseja explorar ou contribuir com o desenvolvimento:
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+1.  **Clone o repositório:**
+    ```bash
+    git clone https://github.com/vihisantos/Zapedia.git
+    ```
+2.  **Instale as dependências:**
+    ```bash
+    npm install
+    ```
+3.  **Inicie o servidor de desenvolvimento:**
+    ```bash
+    npm run dev
+    ```
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 📄 Licença & Notas
+
+Este projeto é uma landing page de alta conversão desenvolvida para demonstrar o poder da plataforma Zapedia.
+
+-   **Documentação Técnica:** Para detalhes sobre a arquitetura e automações internas, consulte o arquivo [AGENTS.md](./AGENTS.md).
+-   **Deploy:** Configurado para GitHub Pages via branch `gh-pages`.
+
+---
+
+Feito com ❤️ por [Zapedia Hub](https://github.com/vihisantos) 🇧🇷
